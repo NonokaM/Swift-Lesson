@@ -15,7 +15,7 @@ struct ContentView: View {
         VStack {
             Text(outputText)
                 .font(.largeTitle)
-            Button("切り替えぼたん") {
+            Button("切り替えボタン") {
                 outputText = "Hi, Swift!"
             }
             .padding(.all)
