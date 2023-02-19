@@ -12,6 +12,7 @@
 		3FB1039C29A2605800FA1F11 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FB1039B29A2605800FA1F11 /* Assets.xcassets */; };
 		3FB1039F29A2605800FA1F11 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FB1039E29A2605800FA1F11 /* Preview Assets.xcassets */; };
 		3FB103A629A2631B00FA1F11 /* SoundPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB103A529A2631B00FA1F11 /* SoundPlayer.swift */; };
+		3FB103A829A26F9F00FA1F11 /* BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB103A729A26F9F00FA1F11 /* BackgroundView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		3FB1039B29A2605800FA1F11 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3FB1039E29A2605800FA1F11 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		3FB103A529A2631B00FA1F11 /* SoundPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundPlayer.swift; sourceTree = "<group>"; };
+		3FB103A729A26F9F00FA1F11 /* BackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,7 @@
 			children = (
 				3FB1039729A2605800FA1F11 /* MyMusicApp.swift */,
 				3FB1039929A2605800FA1F11 /* ContentView.swift */,
+				3FB103A729A26F9F00FA1F11 /* BackgroundView.swift */,
 				3FB103A529A2631B00FA1F11 /* SoundPlayer.swift */,
 				3FB1039B29A2605800FA1F11 /* Assets.xcassets */,
 				3FB1039D29A2605800FA1F11 /* Preview Content */,
@@ -142,6 +145,7 @@
 			files = (
 				3FB1039A29A2605800FA1F11 /* ContentView.swift in Sources */,
 				3FB103A629A2631B00FA1F11 /* SoundPlayer.swift in Sources */,
+				3FB103A829A26F9F00FA1F11 /* BackgroundView.swift in Sources */,
 				3FB1039829A2605800FA1F11 /* MyMusicApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
