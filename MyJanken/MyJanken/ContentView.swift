@@ -15,8 +15,11 @@ struct ContentView: View {
         
         VStack {
             
+            Spacer()
+            
             if answerNumber == 0 {
                 Text("これからじゃんけんをします！")
+                    .padding(.bottom)
             } else if answerNumber == 1 {
                 // グー画像を表示
                 Image("gu")
@@ -24,26 +27,47 @@ struct ContentView: View {
                     .resizable()
                 // アスペクト比（縦横比）を維持する指定
                     .scaledToFit()
+                Spacer()
                 Text("グー")
+                    .padding(.bottom)
+
                 
             } else if answerNumber == 2 {
                 Image("choki")
                     .resizable()
                     .scaledToFit()
+                Spacer()
                 Text("チョキ")
+                    .padding(.bottom)
+
 
             } else {
                 Image("pa")
                     .resizable()
                     .scaledToFit()
+                Spacer()
                 Text("パー")
+                    .padding(.bottom)
+
             }
 
 
             Button {
-                answerNumber = Int.random(in: 1...3)
+                
+                var newAnswerNumber = 0
+                repeat {
+                    newAnswerNumber = Int.random(in: 1...3)
+                } while answerNumber == newAnswerNumber
+                
+                answerNumber = newAnswerNumber
+                
             } label: {
                 Text("じゃんけんをする！")
+                    .frame(maxWidth: .infinity)
+                    .frame(height: 100)
+                    .font(.title)
+                    .background(Color(hue: 0.928, saturation: 0.442, brightness: 1.0))
+                    .foregroundColor(Color.white)
             }
 
         }
